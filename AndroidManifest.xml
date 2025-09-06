@@ -1,0 +1,43 @@
+AndroidManifest.xml additions:
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lovecompanion.app">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".LoveApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_love_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.LoveCompanion">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.LoveCompanion.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".LoveQuizActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LoveCompanion.NoActionBar" />
+        
+        <receiver android:name=".LoveWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/love_widget_info" />
+        </receiver>
+        
+    </application>
+
+</manifest>

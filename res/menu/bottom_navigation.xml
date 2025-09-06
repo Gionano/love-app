@@ -1,0 +1,16 @@
+res/menu/bottom_navigation.xml:
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_quotes"
+        android:icon="@drawable/ic_quote"
+        android:title="Quotes" />
+    <item
+        android:id="@+id/nav_milestones"
+        android:icon="@drawable/ic_milestone"
+        android:title="Milestones" />
+    <item
+        android:id="@+id/nav_memories"
+        android:icon="@drawable/ic_memory"
+        android:title="Memories" />
+</menu>

@@ -1,0 +1,9 @@
+res/values/strings.xml:
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Love Companion</string>
+    <string name="quotes_tab">Quotes</string>
+    <string name="milestones_tab">Milestones</string>
+    <string name="memories_tab">Memories</string>
+    <string name="love_calculator">Love Calculator</string>
+</resources>
